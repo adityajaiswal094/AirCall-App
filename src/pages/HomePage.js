@@ -38,19 +38,9 @@ export default function Homepage() {
 
   const archiveSingleCall = async (id) => {
     try {
-      console.log("id:", id);
-
-      const response = await axios.patch(
-        `${BASE_URL}/activites/${id}`,
-        {
-          is_archived: true,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await axios.patch(`${BASE_URL}/activities/${id}`, {
+        is_archived: true,
+      });
       getActivities();
     } catch (error) {
       console.error(error);
@@ -64,7 +54,7 @@ export default function Homepage() {
         await archiveSingleCall(currentCall.id);
       }
     } catch (error) {
-      console.error("Mera putra: ", error);
+      console.error(error);
     }
   };
 
