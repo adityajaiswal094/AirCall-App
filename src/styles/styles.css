@@ -1,0 +1,144 @@
+.user-loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #032837;
+  position: relative; /* Adding relative positioning */
+}
+
+.homepage {
+  height: 100vh; /* Use 'vh' instead of 'dvh' */
+  min-height: 100vh;
+  background-color: #032837;
+  overflow: hidden;
+  position: relative; /* Adding relative positioning */
+}
+
+.calls-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calls {
+  width: 40%;
+  height: calc(100vh - 5rem); /* Adjusting height to account for padding-top */
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  padding-top: 5rem;
+  overflow: auto; /* Use 'auto' for scrollbars if content overflows */
+}
+
+.call-card-style {
+  height: auto;
+  min-height: 20%;
+  width: 55%;
+  left: 22%;
+  margin-bottom: 5rem;
+  background-color: black;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.normal-button {
+  border-radius: 10px;
+  border: solid;
+  background-color: #065c7d;
+  border-width: 1px;
+  border: none;
+  padding: 8px;
+  color: white;
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  );
+}
+
+.sidebar {
+  background-color: #032837;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Style the track */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.comment-style {
+  height: auto;
+  margin-top: 8px;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.call-activity-detail {
+  height: auto;
+  min-height: 30%;
+  width: 90%;
+  left: 5%;
+  margin-bottom: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.userpage {
+  height: 100vh;
+  background-color: #032837;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  gap: 20px;
+}
+
+/* Adjusting the content size */
+.content {
+  width: 30%;
+  text-align: center;
+}
+
+.user-button {
+  padding: 8px;
+  background-color: #065c7d;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+button {
+  padding: 4px 8px;
+  background-color: #ffff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
