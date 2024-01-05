@@ -8,6 +8,8 @@ Has 2 main features:
 - Archive single or all calls
 - Unarchive all calls
 
+Hosted on: <https://air-call-app.netlify.app/>
+
 ## Getting Started
 
 1. Clone this repository in your local machine.
